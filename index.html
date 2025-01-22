@@ -6,59 +6,58 @@
   <title>korakophilos.net</title>
   <style>
     body {
-      background-color: #121212;
-      color: #00ff00;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: left;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: left;
-      height: 100vh;
-    }
+  background-color: #121212;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items vertically at the top */
+  align-items: center; /* Center all child elements horizontally */
+  height: 100vh;
+}
 
-    a {
-      color: #00ff00;
-      text-decoration: none;
-      font-size: 1rem;
-      margin: 0.5rem 0;
-    }
+a {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
 
-    a:hover {
-      color: #ffff00;
-    }
+a:hover {
+  color: #ffff00;
+}
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center; /* Center text within its container */
+}
 
-    .container {
-      max-width: 90%; /* Wraps text at 90% of the screen width */
-      margin: 0 auto;
-      word-wrap: break-word; /* Ensures long words break to fit within the container */
-      overflow-wrap: break-word; /* Alternative for compatibility */
-      text-align: left;
-    }
+.container {
+  max-width: 90%; /* Wraps text at 90% of the screen width */
+  margin: 0 auto;
+  word-wrap: break-word; /* Ensures long words break to fit within the container */
+  overflow-wrap: break-word; /* Alternative for compatibility */
+  text-align: left; /* Left-align text inside the container */
+}
 
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-      text-align: center;
-    }
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center; /* Center-align footer text */
+}
 
-    @keyframes flicker {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.8; }
-    }
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
 
-    h1, a {
-      animation: flicker 1s infinite;
-    }
-  </style>
+h1, a {
+  animation: flicker 1s infinite;
+}
 </head>
 <body>
   <h1>korakophilos.net</h1>
