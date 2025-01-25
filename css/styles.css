@@ -1,0 +1,54 @@
+body {
+    background-color: #121212;
+    color: #00ff00;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace; /* Use Roboto Mono as the default font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align elements vertically at the top */
+    align-items: flex-start; /* Left-align all elements except footer */
+    height: 100vh;
+  }
+  
+  a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  a:hover {
+    color: #ffff00;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left; /* Left-align the heading */
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left; /* Ensure text inside the container is left-aligned */
+  }
+  
+  footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center; /* Center-align footer text */
+    width: 100%; /* Ensure the footer spans the full width */
+  }
+  
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  h1, a {
+    animation: flicker 1s infinite;
+  }
