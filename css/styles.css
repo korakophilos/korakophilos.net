@@ -25,7 +25,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0 20rem; /* Add 20rem padding on both sides */
+  padding: 0 5rem; /* Add 5rem padding on both sides */
   box-sizing: border-box; /* Ensure padding doesn't break layout */
 }
 
