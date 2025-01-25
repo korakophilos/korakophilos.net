@@ -1,72 +1,73 @@
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('/assets/fonts/roboto-mono-latin-400-normal.woff2') format('woff2'),
-         url('/assets/fonts/roboto-mono-latin-400-normal.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Roboto Mono';
-    src: url('/assets/fonts/roboto-mono-latin-700-normal.woff2') format('woff2'),
-         url('/assets/fonts/roboto-mono-latin-700-normal.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  body {
-    background-color: #121212;
-    color: #00ff00;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-height: 100vh; /* Avoid vh issue on mobile */
-  }
-  
-  a {
-    color: #00ff00;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 0.5rem 0;
-  }
-  
-  a:hover {
-    color: #ffff00;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 90%;
-    margin: 0 auto; /* Center horizontally */
-    overflow-wrap: break-word;
-    text-align: center;
-  }
-  
-  footer {
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #aaa; /* Slightly lighter for better readability */
-    text-align: center;
-    width: 100%;
-    border-top: 1px solid #333; /* Separator */
-  }
-  
-  @keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.8; }
-  }
-  
-  /* Limit flicker to headings for subtle animation */
-  h1 {
-    animation: flicker 1s infinite;
-  }
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono-latin-400-normal.woff2') format('woff2'),
+       url('/assets/fonts/roboto-mono-latin-400-normal.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono-latin-700-normal.woff2') format('woff2'),
+       url('/assets/fonts/roboto-mono-latin-700-normal.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #121212;
+  color: #00ff00;
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0 20rem; /* Add 20rem padding on both sides */
+  box-sizing: border-box; /* Ensure padding doesn't break layout */
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+a:hover {
+  color: #ffff00;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left; /* Keep the text inside left-aligned */
+}
+
+.container {
+  max-width: 100%; /* Use the full width within the padding */
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+footer {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: left;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Limit flicker to headings for subtle animation */
+h1 {
+  animation: flicker 1s infinite;
+}
